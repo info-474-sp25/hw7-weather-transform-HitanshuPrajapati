@@ -107,7 +107,7 @@ d3.csv("weather.csv").then(data => {
     const groupedData2 = d3.groups(filteredData2, d => d.month)
         .map(([month, entries]) => ({
             month, 
-            actualPrecip: d3.mean(enttries, e => e.actualPrecip),
+            actualPrecip: d3.mean(entries, e => e.actualPrecip),
             avgPrecip: d3.mean(entries, e => e.avgPrecip),
             recordPrecip: d3.mean(entries, e => e.recordPrecip)
         }));// Your code here!
