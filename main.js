@@ -88,6 +88,7 @@ d3.csv("weather.csv").then(data => {
     // Check your work:
     console.log("=== CASE 2: PIVOT ===");
     console.log("Raw data:", data);
+    console.log("Test")
 
     // 2.2: Filter
     /*
@@ -96,6 +97,7 @@ d3.csv("weather.csv").then(data => {
     const filteredData2 = data.filter(d => d.year === 2014);// Your code here!
 
     // Check your work:
+    console.log("Test2")
     console.log("Filtered data 2:", filteredData2);
 
     // 2.3: Group and aggregate
@@ -111,7 +113,6 @@ d3.csv("weather.csv").then(data => {
         }));// Your code here!
 
     // Check your work:
-    console.log("Test")
     console.log("Grouped data 2:", groupedData2);
 
     // 2.4: FLATTEN
