@@ -111,6 +111,7 @@ d3.csv("weather.csv").then(data => {
         }));// Your code here!
 
     // Check your work:
+    console.log("Test")
     console.log("Grouped data 2:", groupedData2);
 
     // 2.4: FLATTEN
