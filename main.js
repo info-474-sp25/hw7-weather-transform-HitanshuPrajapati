@@ -103,7 +103,7 @@ d3.csv("weather.csv").then(data => {
         "For each [MONTH], I want the {average of} [AVERAGE], [ACTUAL], and [RECORD PRECIPITATION]."
     */
     const groupedData2 = d3.groups(filteredData2, d => d.month)
-        .map(([months, entries]) => ({
+        .map(([month, entries]) => ({
             month, 
             actualPrecip: d3.mean(enttries, e => e.actualPrecip),
             avgPrecip: d3.mean(entries, e => e.avgPrecip),
